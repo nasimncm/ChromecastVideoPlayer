@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Chromecast Video Player</string>
+    <string name="app_id">C0868879</string>
+    <string name="description" />
+    <string name="action_settings">Setting</string>
+    <string name="media_route_menu_title">Cast</string>
+</resources>

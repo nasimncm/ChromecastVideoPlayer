@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivThumbnailList"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thumbnail" />
+
+<!--    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPlay"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivThumbnailList"
+        app:layout_constraintEnd_toEndOf="@+id/ivThumbnailList"
+        app:layout_constraintStart_toStartOf="@id/ivThumbnailList"
+        app:layout_constraintTop_toTopOf="@+id/ivThumbnailList"
+        app:srcCompat="@drawable/play_icon" />-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Title"
+        android:textColor="@color/teal_700"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivThumbnailList"
+        app:layout_constraintTop_toTopOf="@+id/ivThumbnailList" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Sub Title"
+        android:textSize="10dp"
+        app:layout_constraintStart_toEndOf="@+id/ivThumbnailList"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Description"
+        android:textSize="0dp"
+        app:layout_constraintStart_toEndOf="@+id/ivThumbnailList"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
